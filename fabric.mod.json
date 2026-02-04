@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "id": "enchancement",
+  "version": "1.21-r14",
+  "name": "Enchancement",
+  "description": "A mod that completely overhauls the vanilla enchanting system and some adjacent features",
+  "authors": [
+    "MoriyaShiine"
+  ],
+  "contributors": [
+    "cybercat5555",
+    "doctor4t",
+    "UpcraftLP"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/enchancement",
+    "sources": "https://github.com/MoriyaShiine/enchancement",
+    "issues": "https://github.com/MoriyaShiine/enchancement/issues"
+  },
+  "license": "All Rights Reserved",
+  "icon": "assets/enchancement/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "moriyashiine.enchancement.data.ModDataGenerator"
+    ],
+    "main": [
+      "moriyashiine.enchancement.common.Enchancement"
+    ],
+    "client": [
+      "moriyashiine.enchancement.client.EnchancementClient"
+    ],
+    "cardinal-components-entity": [
+      "moriyashiine.enchancement.common.init.ModEntityComponents"
+    ],
+    "cardinal-components-world": [
+      "moriyashiine.enchancement.common.init.ModWorldComponents"
+    ]
+  },
+  "mixins": [
+    "enchancement.mixins.json"
+  ],
+  "accessWidener": "enchancement.accesswidener",
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "~1.21",
+    "java": "\u003e\u003d21",
+    "fabric-api": "*"
+  },
+  "custom": {
+    "cardinal-components": [
+      "enchancement:fell_trees",
+      "enchancement:honey_trail",
+      "enchancement:air_mobility",
+      "enchancement:projectile_timer",
+      "enchancement:safe_lightning",
+      "enchancement:air_jump",
+      "enchancement:boost_in_fluid",
+      "enchancement:bury_entity",
+      "enchancement:charge_jump",
+      "enchancement:conditional_attributes",
+      "enchancement:direction_burst",
+      "enchancement:eruption",
+      "enchancement:extended_water_time",
+      "enchancement:lightning_dash",
+      "enchancement:rotation_burst",
+      "enchancement:slam",
+      "enchancement:slide",
+      "enchancement:wall_jump",
+      "enchancement:apply_random_status_effect",
+      "enchancement:apply_random_status_effect_spectral",
+      "enchancement:delayed_launch",
+      "enchancement:disarming_fishing_bobber",
+      "enchancement:disarmed_player",
+      "enchancement:disarmed_witch",
+      "enchancement:frozen",
+      "enchancement:frozen_guardian",
+      "enchancement:frozen_squid",
+      "enchancement:leeching_trident",
+      "enchancement:phase_through_blocks_and_float",
+      "enchancement:teleport_on_hit"
+    ]
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/cardinal-components-entity-6.1.2.jar"
+    },
+    {
+      "file": "META-INF/jars/tooltipfix-1.1.1-1.20.jar"
+    },
+    {
+      "file": "META-INF/jars/cardinal-components-base-6.1.2.jar"
+    },
+    {
+      "file": "META-INF/jars/midnightlib-1.6.3-fabric.jar"
+    },
+    {
+      "file": "META-INF/jars/cardinal-components-world-6.1.2.jar"
+    }
+  ]
+}
